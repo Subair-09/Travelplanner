@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Search, GraduationCap, Globe, BookOpen, ArrowRight, Star, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { UNIVERSITIES, DESTINATIONS, BLOG_POSTS } from '../mockData';
 import { formatCurrency } from '../lib/utils';
@@ -33,12 +34,12 @@ export function Home() {
               Empowering ambitious students to access world-class education through personalized consultancy, scholarship matching, and seamless visa processing.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
-              <a href="/universities" className="btn-gold">
+              <Link to="/universities" className="btn-gold">
                 Explore Universities
-              </a>
-              <a href="/admissions" className="btn-outline">
+              </Link>
+              <Link to="/admissions" className="btn-outline">
                 Consultation
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -102,9 +103,9 @@ export function Home() {
               <h2 className="text-4xl md:text-5xl font-bold text-navy mb-4">Featured Universities</h2>
               <p className="text-lg text-gray-500 max-w-xl">Start your academic journey at top-ranked world institutions with our proven guidance.</p>
             </div>
-            <a href="/universities" className="flex items-center gap-2 text-gold font-bold hover:gap-3 transition-all">
+            <Link to="/universities" className="flex items-center gap-2 text-gold font-bold hover:gap-3 transition-all">
               View All Universities <ArrowRight size={20} />
-            </a>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -138,9 +139,9 @@ export function Home() {
                       <span>Tuition: {formatCurrency(uni.tuitionRange.min)} - {formatCurrency(uni.tuitionRange.max)}/yr</span>
                     </div>
                   </div>
-                  <a href={`/universities?id=${uni.id}`} className="w-full py-3 rounded-xl border border-gold/20 text-gold font-bold flex items-center justify-center gap-2 group-hover:bg-gold group-hover:text-white transition-all">
-                    View Details <ChevronRight size={18} />
-                  </a>
+                <Link to={`/universities?id=${uni.id}`} className="w-full py-3 rounded-xl border border-gold/20 text-gold font-bold flex items-center justify-center gap-2 group-hover:bg-gold group-hover:text-white transition-all">
+                  View Details <ChevronRight size={18} />
+                </Link>
                 </div>
               </motion.div>
             ))}
@@ -171,9 +172,9 @@ export function Home() {
                   <p className="text-white/70 text-sm mb-4 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     {dest.description}
                   </p>
-                  <a href={`/destinations?id=${dest.id}`} className="inline-flex items-center gap-2 text-gold font-bold">
+                  <Link to={`/destinations?id=${dest.id}`} className="inline-flex items-center gap-2 text-gold font-bold">
                     Learn More <ArrowRight size={16} />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -204,9 +205,9 @@ export function Home() {
                 </div>
               ))}
             </div>
-            <a href="/about" className="inline-block px-8 py-4 rounded-xl bg-navy text-white font-bold hover:scale-105 transition-transform">
+            <Link to="/about" className="inline-block px-8 py-4 rounded-xl bg-navy text-white font-bold hover:scale-105 transition-transform">
               Learn More About Us
-            </a>
+            </Link>
           </div>
           <div className="lg:w-1/2 grid grid-cols-2 gap-4">
             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" className="rounded-2xl h-80 object-cover mt-8" alt="Students" />

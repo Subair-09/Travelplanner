@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { Globe, Instagram, Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
@@ -27,10 +28,10 @@ export function Footer() {
           <div>
             <h4 className="text-[12px] uppercase tracking-widest font-bold text-gold mb-6">Quick Links</h4>
             <ul className="space-y-4 text-slate text-sm">
-              <li><a href="/universities" className="hover:text-white transition-colors">Find Universities</a></li>
-              <li><a href="/destinations" className="hover:text-white transition-colors">Explore Countries</a></li>
-              <li><a href="/scholarships" className="hover:text-white transition-colors">Scholarship Finder</a></li>
-              <li><a href="/blog" className="hover:text-white transition-colors">Latest Articles</a></li>
+              <li><Link to="/universities" className="hover:text-white transition-colors">Find Universities</Link></li>
+              <li><Link to="/destinations" className="hover:text-white transition-colors">Explore Countries</Link></li>
+              <li><Link to="/scholarships" className="hover:text-white transition-colors">Scholarship Finder</Link></li>
+              <li><Link to="/blog" className="hover:text-white transition-colors">Latest Articles</Link></li>
             </ul>
           </div>
 
