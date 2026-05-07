@@ -33,12 +33,12 @@ export function Admissions() {
           <div className="relative">
              <div className="grid grid-cols-2 gap-4">
                <div className="space-y-4">
-                 <div className="h-48 rounded-3xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" alt="" /></div>
-                 <div className="h-64 rounded-3xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" alt="" /></div>
+                 <div className="h-48 rounded-3xl overflow-hidden shadow-lg"><img src="https://imgur.com/ZuHgAJs.png" className="w-full h-full object-cover" alt="Campus" /></div>
+                 <div className="h-64 rounded-3xl overflow-hidden shadow-lg"><img src="https://imgur.com/sSfPxEL.png" className="w-full h-full object-cover" alt="Student Life" /></div>
                </div>
                <div className="space-y-4 pt-12">
-                 <div className="h-64 rounded-3xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" alt="" /></div>
-                 <div className="h-48 rounded-3xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" alt="" /></div>
+                 <div className="h-64 rounded-3xl overflow-hidden shadow-lg"><img src="https://imgur.com/xzxXafo.png" className="w-full h-full object-cover" alt="Lecture Hall" /></div>
+                 <div className="h-48 rounded-3xl overflow-hidden shadow-lg"><img src="https://imgur.com/MZnOZDW.png" className="w-full h-full object-cover" alt="Graduation" /></div>
                </div>
              </div>
           </div>

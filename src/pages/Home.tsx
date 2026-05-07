@@ -210,8 +210,8 @@ export function Home() {
             </Link>
           </div>
           <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" className="rounded-2xl h-80 object-cover mt-8" alt="Students" />
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800" className="rounded-2xl h-80 object-cover" alt="Campus Life" />
+            <img src="https://imgur.com/ifHyTLz.png" className="rounded-2xl h-80 object-cover mt-8" alt="Students" />
+            <img src="https://imgur.com/ZuHgAJs.png" className="rounded-2xl h-80 object-cover" alt="Campus Life" />
           </div>
         </div>
       </section>
