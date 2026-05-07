@@ -27,8 +27,8 @@ export function Home() {
             transition={{ duration: 0.8 }}
             className="lg:w-3/5 space-y-10"
           >
-            <h1 className="text-6xl md:text-8xl font-display font-semibold leading-[1.1] text-white">
-              Plan Your Study <br /> <span className="text-gold italic">Abroad Journey</span> <br /> With Ease
+            <h1 className="text-4xl md:text-8xl font-display font-semibold leading-[1.1] text-white">
+              Plan Your Study <br className="hidden md:block" /> <span className="text-gold italic">Abroad Journey</span> <br className="hidden md:block" /> With Ease
             </h1>
             <p className="text-xl text-slate max-w-lg leading-relaxed">
               Empowering ambitious students to access world-class education through personalized consultancy, scholarship matching, and seamless visa processing.

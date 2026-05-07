@@ -41,11 +41,11 @@ export function Universities() {
     <div className="pt-32 pb-24 min-h-screen bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="mb-20">
-          <h1 className="text-5xl md:text-7xl font-display font-semibold text-white mb-6">
+        <div className="mb-12 md:mb-20">
+          <h1 className="text-4xl md:text-7xl font-display font-semibold text-white mb-6">
             Discover Your <span className="text-gold italic">Future</span>
           </h1>
-          <p className="text-xl text-slate max-w-2xl italic">
+          <p className="text-lg md:text-xl text-slate max-w-2xl italic">
             Find world-class universities that match your aspirations. Use our refined filters to narrow down your study abroad dream.
           </p>
         </div>
@@ -119,12 +119,12 @@ export function Universities() {
                   </div>
                 )}
               </div>
-              <div className="p-10">
-                <div className="flex items-center gap-6 mb-8">
-                  <img src={uni.logo} className="w-16 h-16 rounded-sm object-cover border border-white/10" alt={uni.name} />
-                  <div>
-                    <h3 className="text-2xl font-display text-white italic line-clamp-1">{uni.name}</h3>
-                    <p className="text-xs text-slate font-bold uppercase tracking-widest">{uni.city}, {uni.country}</p>
+              <div className="p-6 md:p-10">
+                <div className="flex items-center gap-4 md:gap-6 mb-8">
+                  <img src={uni.logo} className="w-12 h-12 md:w-16 md:h-16 rounded-sm object-cover border border-white/10 shrink-0" alt={uni.name} />
+                  <div className="min-w-0">
+                    <h3 className="text-xl md:text-2xl font-display text-white italic line-clamp-1">{uni.name}</h3>
+                    <p className="text-[10px] text-slate font-bold uppercase tracking-widest truncate">{uni.city}, {uni.country}</p>
                   </div>
                 </div>
 
@@ -187,31 +187,31 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
 
         <div className="grid lg:grid-cols-3 gap-16">
           {/* Main Info */}
-          <div className="lg:col-span-2 space-y-16">
-            <div className="relative h-[500px] rounded-sm overflow-hidden border border-white/10">
+          <div className="lg:col-span-2 space-y-12 md:space-y-16">
+            <div className="relative h-[300px] md:h-[500px] rounded-sm overflow-hidden border border-white/10">
               <img src={university.image} className="w-full h-full object-cover" alt={university.name} />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy-dark/40 to-transparent" />
-              <div className="absolute bottom-12 left-12 right-12 flex flex-col md:flex-row items-end md:items-center gap-8">
-                <img src={university.logo} className="w-24 h-24 rounded-sm border-[6px] border-white/10 object-cover bg-navy shadow-2xl" alt="logo" />
-                <div className="flex-grow">
-                  <div className="flex items-center gap-4 mb-2">
-                    <h1 className="text-5xl md:text-7xl font-display text-white italic leading-none">{university.name}</h1>
+              <div className="absolute bottom-6 left-6 right-6 md:bottom-12 md:left-12 md:right-12 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                <img src={university.logo} className="w-16 h-16 md:w-24 md:h-24 rounded-sm border-[4px] md:border-[6px] border-white/10 object-cover bg-navy shadow-2xl shrink-0" alt="logo" />
+                <div className="flex-grow min-w-0">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-2">
+                    <h1 className="text-3xl md:text-7xl font-display text-white italic leading-none">{university.name}</h1>
                     {university.isPartner && (
-                      <span className="px-4 py-2 bg-amber-500 text-white text-[10px] font-black uppercase tracking-[3px] rounded-sm hidden md:block">
-                        Official Partner
+                      <span className="px-3 py-1 bg-amber-500 text-white text-[8px] font-black uppercase tracking-[2px] rounded-sm self-start">
+                        Partner
                       </span>
                     )}
                   </div>
-                  <p className="text-xl text-gold italic flex items-center gap-3">
-                    <MapPin size={24} /> {university.city}, {university.country}
+                  <p className="text-lg md:text-xl text-gold italic flex items-center gap-3">
+                    <MapPin size={20} className="md:w-6 md:h-6" /> {university.city}, {university.country}
                   </p>
                 </div>
               </div>
             </div>
 
-            <section className="glass-card p-12 rounded-sm border-white/5">
-              <h2 className="text-[10px] uppercase tracking-[4px] font-black text-gold mb-8">About University</h2>
-              <p className="text-xl text-slate leading-relaxed italic">"{university.description}"</p>
+            <section className="glass-card p-6 md:p-12 rounded-sm border-white/5">
+              <h2 className="text-[10px] uppercase tracking-[4px] font-black text-gold mb-6 md:mb-8">About University</h2>
+              <p className="text-lg md:text-xl text-slate leading-relaxed italic">"{university.description}"</p>
             </section>
 
             <section className="space-y-10">
@@ -243,8 +243,8 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
 
           {/* Sidebar */}
           <div className="space-y-12">
-            <div className="glass-card p-12 rounded-sm border-gold/20 space-y-10">
-              <h3 className="text-3xl font-display text-white italic">Institutional <span className="text-gold italic">Data</span></h3>
+            <div className="glass-card p-6 md:p-12 rounded-sm border-gold/20 space-y-8 md:space-y-10">
+              <h3 className="text-2xl md:text-3xl font-display text-white italic">Institutional <span className="text-gold italic">Data</span></h3>
               <div className="space-y-6">
                 <DataRow label="Global Academic Ranking" value={`#${university.ranking}`} />
                 <DataRow label="Estimated Annual Tuition" value={`${formatCurrency(university.tuitionRange.min)}+`} />
@@ -283,8 +283,8 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
 function DataRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex justify-between items-end border-b border-white/10 pb-4">
-      <span className="text-[10px] uppercase tracking-widest font-bold text-slate max-w-[120px] leading-tight">{label}</span>
-      <span className="font-display text-2xl italic text-gold leading-none">{value}</span>
+      <span className="text-[10px] uppercase tracking-widest font-bold text-slate max-w-[120px] leading-tight shrink-0">{label}</span>
+      <span className="font-display text-xl md:text-2xl italic text-gold leading-none">{value}</span>
     </div>
   );
 }

@@ -17,23 +17,23 @@ export function About() {
             <div className="inline-block px-6 py-2 rounded-full bg-gold/10 text-gold font-black text-[10px] tracking-[4px] uppercase border border-gold/20">
               Legacy & Story
             </div>
-            <h1 className="text-5xl md:text-8xl font-display font-semibold text-white leading-tight">
+            <h1 className="text-4xl md:text-8xl font-display font-semibold text-white leading-tight">
               Empowering <span className="text-gold italic">Dreams</span> <br /> 
               Across <span className="text-white font-display italic">Borders.</span>
             </h1>
-            <p className="text-2xl text-slate leading-relaxed italic font-light">
+            <p className="text-xl md:text-2xl text-slate leading-relaxed italic font-light">
               "Travelplanner is more than a consultancy; it's a bridge between local aspirations and global prestige."
             </p>
             <p className="text-lg text-slate/70 leading-relaxed max-w-xl">
               Founded in 2012, our mission has been to demystify the complex landscape of international education. We provide high-caliber, strategic guidance to students aiming for world-renowned institutions.
             </p>
-            <div className="grid grid-cols-2 gap-12 pt-6">
-              <div className="border-l-2 border-gold pl-6">
-                <h4 className="text-5xl font-display font-bold text-white italic mb-2">12+</h4>
+            <div className="grid grid-cols-2 gap-8 md:gap-12 pt-6">
+              <div className="border-l-2 border-gold pl-4 md:pl-6">
+                <h4 className="text-3xl md:text-5xl font-display font-bold text-white italic mb-2">12+</h4>
                 <p className="text-[10px] text-slate font-black uppercase tracking-[2px]">Years of Expertise</p>
               </div>
-              <div className="border-l-2 border-gold pl-6">
-                <h4 className="text-5xl font-display font-bold text-white italic mb-2">150+</h4>
+              <div className="border-l-2 border-gold pl-4 md:pl-6">
+                <h4 className="text-3xl md:text-5xl font-display font-bold text-white italic mb-2">150+</h4>
                 <p className="text-[10px] text-slate font-black uppercase tracking-[2px]">Global Partnerships</p>
               </div>
             </div>
@@ -57,22 +57,22 @@ export function About() {
         </section>
 
         {/* Vision/Mission */}
-        <section className="grid md:grid-cols-2 gap-12 mb-32">
-          <div className="p-16 rounded-sm glass-card border-white/5 space-y-8 group hover:border-gold/30 transition-all">
-            <div className="w-20 h-20 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center text-gold group-hover:bg-gold transition-all group-hover:text-navy">
-              <Target size={40} />
+        <section className="grid md:grid-cols-2 gap-12 mb-32 text-center md:text-left">
+          <div className="p-10 md:p-16 rounded-sm glass-card border-white/5 space-y-8 group hover:border-gold/30 transition-all">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center text-gold group-hover:bg-gold transition-all group-hover:text-navy mx-auto md:mx-0">
+              <Target className="w-8 h-8 md:w-10 md:h-10" />
             </div>
-            <h2 className="text-4xl font-display text-white italic">Our Mission</h2>
-            <p className="text-slate text-xl leading-relaxed italic">
+            <h2 className="text-3xl md:text-4xl font-display text-white italic">Our Mission</h2>
+            <p className="text-slate text-lg md:text-xl leading-relaxed italic">
               "To revolutionize the international education process through transparency, ethics, and unparalleled strategic insight."
             </p>
           </div>
-          <div className="p-16 rounded-sm glass-card border-white/5 bg-gold text-navy space-y-8 group hover:shadow-2xl transition-all">
-            <div className="w-20 h-20 rounded-sm bg-navy/10 border border-navy/10 flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-gold transition-all">
-              <Eye size={40} />
+          <div className="p-10 md:p-16 rounded-sm glass-card border-white/5 bg-gold text-navy space-y-8 group hover:shadow-2xl transition-all">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-sm bg-navy/10 border border-navy/10 flex items-center justify-center text-navy group-hover:bg-navy group-hover:text-gold transition-all mx-auto md:mx-0">
+              <Eye className="w-8 h-8 md:w-10 md:h-10" />
             </div>
-            <h2 className="text-4xl font-display text-navy italic">Our Vision</h2>
-            <p className="text-navy text-xl leading-relaxed font-bold">
+            <h2 className="text-3xl md:text-4xl font-display text-navy italic">Our Vision</h2>
+            <p className="text-navy text-lg md:text-xl leading-relaxed font-bold">
               To be the definitive global standard for study abroad advisory, empowering the next generation of academic leaders.
             </p>
           </div>
@@ -80,8 +80,8 @@ export function About() {
 
         {/* Why Choose Us */}
         <section className="text-center mb-32">
-          <h2 className="text-5xl font-display text-white mb-20 italic">The <span className="text-gold italic">Travelplanner</span> Difference</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <h2 className="text-4xl md:text-5xl font-display text-white mb-16 md:mb-20 italic">The <span className="text-gold italic">Travelplanner</span> Difference</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             <WhyCard 
               icon={ShieldCheck} 
               title="Verified Experts" 
@@ -111,11 +111,11 @@ export function About() {
 
 function WhyCard({ icon: Icon, title, desc }: { icon: any; title: string; desc: string }) {
   return (
-    <div className="p-12 rounded-sm glass-card border-white/5 hover:border-gold/30 transition-all space-y-8 group">
+    <div className="p-8 md:p-12 rounded-sm glass-card border-white/5 hover:border-gold/30 transition-all space-y-6 md:space-y-8 group">
       <div className="w-14 h-14 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center text-gold group-hover:gold-gradient group-hover:text-navy transition-all mx-auto">
         <Icon size={28} />
       </div>
-      <h3 className="text-2xl font-display text-white italic">{title}</h3>
+      <h3 className="text-xl md:text-2xl font-display text-white italic">{title}</h3>
       <p className="text-slate text-sm leading-relaxed italic">"{desc}"</p>
     </div>
   );

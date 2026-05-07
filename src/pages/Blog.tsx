@@ -8,7 +8,7 @@ export function Blog() {
     <div className="pt-32 pb-24 min-h-screen bg-navy text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
-        <div className="text-center mb-24 space-y-6">
+        <div className="text-center mb-16 md:mb-24 space-y-6">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -16,39 +16,39 @@ export function Blog() {
           >
             <BookOpen size={16} /> Intellectual Hub
           </motion.div>
-          <h1 className="text-6xl md:text-8xl font-display font-semibold text-white italic leading-tight">
+          <h1 className="text-4xl md:text-8xl font-display font-semibold text-white italic leading-tight">
             Travelplanner <span className="text-gold italic">Insights</span>
           </h1>
-          <p className="text-xl text-slate max-w-2xl mx-auto italic font-light italic">
+          <p className="text-lg md:text-xl text-slate max-w-2xl mx-auto italic font-light">
             "Strategic intelligence for the modern academic explorer. Student stories, and global news that shape your trajectory."
           </p>
         </div>
 
         {/* Featured Post */}
-        <div className="mb-32">
+        <div className="mb-20 md:mb-32">
           <motion.div 
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="group relative h-[600px] rounded-sm overflow-hidden cursor-pointer border border-white/10 shadow-2xl"
+            className="group relative h-[400px] md:h-[600px] rounded-sm overflow-hidden cursor-pointer border border-white/10 shadow-2xl"
           >
             <img src={BLOG_POSTS[0].image} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000" alt="Featured" />
             <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy-dark/60 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-16 w-full">
-              <div className="flex items-center gap-6 text-gold mb-8 font-black uppercase tracking-[3px] text-[10px]">
+            <div className="absolute bottom-0 left-0 p-6 md:p-16 w-full">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6 text-gold mb-6 md:mb-8 font-black uppercase tracking-[3px] text-[10px]">
                 <span className="bg-gold text-navy px-4 py-1 rounded-sm">{BLOG_POSTS[0].category}</span>
                 <span className="flex items-center gap-2 border-b border-gold/20 pb-1"><Clock size={16} /> 5 MIN READ</span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-display font-bold text-white mb-8 max-w-4xl leading-[1.1] italic">
+              <h2 className="text-2xl md:text-7xl font-display font-bold text-white mb-4 md:mb-8 max-w-4xl leading-tight md:leading-[1.1] italic">
                 {BLOG_POSTS[0].title}
               </h2>
-              <p className="text-slate text-xl mb-10 max-w-3xl line-clamp-2 italic leading-relaxed">
+              <p className="text-slate text-lg md:text-xl mb-6 md:mb-10 max-w-3xl line-clamp-2 italic leading-relaxed hidden sm:block">
                 "{BLOG_POSTS[0].excerpt}"
               </p>
-              <div className="flex items-center gap-6">
-                <img src="https://i.pravatar.cc/100?u=sarah" className="w-16 h-16 rounded-sm border-2 border-gold/30 object-cover" alt="author" />
+              <div className="flex items-center gap-4 md:gap-6">
+                <img src="https://i.pravatar.cc/100?u=sarah" className="w-10 h-10 md:w-16 md:h-16 rounded-sm border-2 border-gold/30 object-cover" alt="author" />
                 <div>
-                  <p className="text-white font-bold text-lg leading-none mb-2">{BLOG_POSTS[0].author}</p>
-                  <p className="text-slate/50 text-[10px] font-black uppercase tracking-widest">{BLOG_POSTS[0].date}</p>
+                  <p className="text-white font-bold text-sm md:text-lg leading-none mb-1 md:mb-2">{BLOG_POSTS[0].author}</p>
+                  <p className="text-slate/50 text-[8px] md:text-[10px] font-black uppercase tracking-widest">{BLOG_POSTS[0].date}</p>
                 </div>
               </div>
             </div>
@@ -94,14 +94,14 @@ export function Blog() {
                   {post.category}
                 </div>
               </div>
-              <div className="p-10 space-y-6">
+              <div className="p-6 md:p-10 space-y-6">
                 <div className="flex items-center gap-3 text-[10px] text-slate font-black uppercase tracking-widest leading-none border-b border-white/5 pb-4">
                    <Calendar size={14} className="text-gold" /> {post.date}
                 </div>
-                <h3 className="text-2xl font-display font-semibold text-white italic leading-tight group-hover:text-gold transition-colors">
+                <h3 className="text-xl md:text-2xl font-display font-semibold text-white italic leading-tight group-hover:text-gold transition-colors line-clamp-2">
                   {post.title}
                 </h3>
-                <p className="text-slate line-clamp-3 text-sm leading-relaxed italic italic font-light">
+                <p className="text-slate line-clamp-3 text-sm leading-relaxed italic font-light">
                   "{post.excerpt}"
                 </p>
                 <div className="pt-8 flex justify-between items-center border-t border-white/5">

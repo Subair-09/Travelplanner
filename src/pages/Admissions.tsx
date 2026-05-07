@@ -17,11 +17,11 @@ export function Admissions() {
             >
               <ClipboardCheck size={16} /> Admission Lifecycle
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-bold text-navy font-display">Your Fast Track <br /> To <span className="text-gold italic">Global Education</span></h1>
-            <p className="text-xl text-gray-500 leading-relaxed italic">
+            <h1 className="text-4xl md:text-7xl font-bold text-navy font-display">Your Fast Track <br /> To <span className="text-gold italic">Global Education</span></h1>
+            <p className="text-lg md:text-xl text-gray-500 leading-relaxed italic">
               Navigating global admissions can be daunting. We’ve streamlined the process to make it transparent, predictable, and successful.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a href="#consultation" className="px-8 py-4 rounded-xl gold-gradient text-white font-bold hover:scale-105 transition-transform">
                 Start My Application
               </a>
@@ -60,14 +60,14 @@ export function Admissions() {
         </section>
 
         {/* Scholarships */}
-        <section className="bg-cream rounded-[4rem] p-12 md:p-20 mb-32 border border-gold/10 overflow-hidden relative">
+        <section className="bg-cream rounded-[2.5rem] md:rounded-[4rem] p-8 md:p-12 lg:p-20 mb-32 border border-gold/10 overflow-hidden relative">
           <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 blur-3xl -translate-y-1/2 translate-x-1/2 rounded-full" />
           <div className="max-w-4xl relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-gold/10 text-gold text-xs font-bold uppercase tracking-widest mb-6">
               <Star size={14} /> Merit Based Funding
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-navy font-display mb-8">Scholarships & <br /> Financial Support</h2>
-            <p className="text-xl text-gray-500 mb-12 italic">We help you unlock funded opportunities to make your dream education affordable.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-navy font-display mb-8">Scholarships & <br /> Financial Support</h2>
+            <p className="text-lg md:text-xl text-gray-500 mb-12 italic">We help you unlock funded opportunities to make your dream education affordable.</p>
             
             <div className="grid md:grid-cols-2 gap-8">
               {SCHOLARSHIPS.map((scholar, i) => (
@@ -101,11 +101,11 @@ export function Admissions() {
         </section>
 
         {/* Consultation Form */}
-        <section id="consultation" className="max-w-4xl mx-auto bg-navy rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden">
+        <section id="consultation" className="max-w-4xl mx-auto bg-navy rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 lg:p-20 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-white/5 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
           <div className="relative z-10 text-center mb-12">
-            <h2 className="text-4xl font-bold font-display italic mb-4">Book Your Free Consultation</h2>
-            <p className="text-white/60">Our experts are ready to map out your study abroad journey.</p>
+            <h2 className="text-3xl md:text-4xl font-bold font-display italic mb-4">Book Your Free Consultation</h2>
+            <p className="text-white/60 text-sm md:text-base">Our experts are ready to map out your study abroad journey.</p>
           </div>
           
           <form className="relative z-10 grid md:grid-cols-2 gap-6">
@@ -144,9 +144,9 @@ export function Admissions() {
 function ProcessStep({ number, title, desc }: { number: string; title: string; desc: string }) {
   return (
     <div className="space-y-6">
-       <div className="text-6xl font-black text-navy/5 font-display mb-[-30px] ml-4">{number}</div>
-       <div className="p-8 rounded-3xl bg-white border border-gray-100 shadow-sm relative z-10 hover:shadow-xl transition-all h-full">
-         <h3 className="text-2xl font-bold text-navy font-display italic mb-4">{title}</h3>
+       <div className="text-5xl md:text-6xl font-black text-navy/5 font-display mb-[-25px] md:mb-[-30px] ml-4">{number}</div>
+       <div className="p-6 md:p-8 rounded-3xl bg-white border border-gray-100 shadow-sm relative z-10 hover:shadow-xl transition-all h-full">
+         <h3 className="text-xl md:text-2xl font-bold text-navy font-display italic mb-4">{title}</h3>
          <p className="text-gray-500 leading-relaxed text-sm">{desc}</p>
        </div>
     </div>

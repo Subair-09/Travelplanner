@@ -23,8 +23,8 @@ export function Programs() {
           >
             <Star size={16} /> World-Class Curriculum
           </motion.div>
-          <h1 className="text-5xl md:text-7xl font-bold text-navy font-display mb-6">Choose Your <span className="text-gold">Academic Path</span></h1>
-          <p className="text-xl text-gray-500 max-w-3xl italic">Explore thousands of programs across top global universities. Whether you're starting your career or looking to specialize, we have the right fit.</p>
+          <h1 className="text-4xl md:text-7xl font-bold text-navy font-display mb-6">Choose Your <span className="text-gold">Academic Path</span></h1>
+          <p className="text-lg md:text-xl text-gray-500 max-w-3xl italic">Explore thousands of programs across top global universities. Whether you're starting your career or looking to specialize, we have the right fit.</p>
         </header>
 
         {/* Category Cards */}
@@ -53,11 +53,11 @@ export function Programs() {
 
         {/* Featured Programs List */}
         <section className="space-y-12">
-          <div className="flex justify-between items-end">
-            <h2 className="text-4xl font-bold text-navy font-display italic">Most Popular Programs</h2>
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy font-display italic">Most Popular Programs</h2>
             <div className="flex gap-4">
-              <button className="px-6 py-2 rounded-full bg-navy text-white font-bold">Recommended</button>
-              <button className="px-6 py-2 rounded-full bg-gray-50 text-gray-400 font-bold hover:bg-gray-100">Top Rated</button>
+              <button className="px-6 py-2 rounded-full bg-navy text-white text-sm font-bold">Recommended</button>
+              <button className="px-6 py-2 rounded-full bg-gray-50 text-gray-400 text-sm font-bold hover:bg-gray-100">Top Rated</button>
             </div>
           </div>
 
@@ -75,13 +75,13 @@ export function Programs() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-8 group"
+                className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col lg:flex-row lg:items-center justify-between gap-8 group"
               >
-                <div className="space-y-2 lg:w-1/3">
+                <div className="space-y-2 w-full lg:w-1/3">
                   <div className="flex items-center gap-3">
                     <h3 className="text-2xl font-bold text-navy mb-1 italic group-hover:text-gold transition-colors">{prog.name}</h3>
                     {prog.isPartner && (
-                      <span className="px-3 py-1 bg-amber-500 text-white text-[8px] font-black uppercase tracking-widest rounded-sm">
+                      <span className="px-3 py-1 bg-amber-500 text-white text-[8px] font-black uppercase tracking-widest rounded-sm shrink-0">
                         Partner
                       </span>
                     )}
@@ -89,7 +89,7 @@ export function Programs() {
                   <p className="text-gold font-bold text-sm tracking-wide uppercase italic">{prog.uni}</p>
                 </div>
 
-                <div className="flex flex-wrap gap-8 lg:w-1/2">
+                <div className="flex flex-wrap gap-6 md:gap-8 w-full lg:w-1/2">
                    <div className="flex items-center gap-3">
                      <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center text-gray-400">
                        <Clock size={18} />
@@ -119,7 +119,7 @@ export function Programs() {
                    </div>
                 </div>
 
-                <button className="px-8 py-4 rounded-xl border border-navy text-navy font-bold hover:bg-navy hover:text-white transition-all">
+                <button className="w-full lg:w-auto px-8 py-4 rounded-xl border border-navy text-navy font-bold hover:bg-navy hover:text-white transition-all whitespace-nowrap">
                   Apply Now
                 </button>
               </motion.div>

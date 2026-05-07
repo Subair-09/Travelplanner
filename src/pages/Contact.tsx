@@ -4,11 +4,11 @@ import { Mail, Phone, MapPin, MessageSquare, Send, Globe, Instagram, Facebook, T
 
 export function Contact() {
   return (
-    <div className="pt-32 pb-24 bg-navy text-white min-h-screen">
+    <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-navy text-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid lg:grid-cols-2 gap-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
           {/* Contact Info */}
-          <div className="space-y-16">
+          <div className="space-y-12 md:space-y-16">
             <div>
               <motion.div 
                 initial={{ opacity: 0, x: -30 }}
@@ -17,10 +17,10 @@ export function Contact() {
               >
                 <MessageSquare size={16} /> Get In Touch
               </motion.div>
-              <h1 className="text-6xl md:text-8xl font-display font-semibold text-white mb-8 italic leading-none">
-                We'd love to <br /> <span className="text-gold">hear from you.</span>
+              <h1 className="text-4xl md:text-8xl font-display font-semibold text-white mb-8 italic leading-tight md:leading-none">
+                We'd love to <br className="hidden md:block" /> <span className="text-gold">hear from you.</span>
               </h1>
-              <p className="text-xl text-slate leading-relaxed max-w-md italic">
+              <p className="text-lg md:text-xl text-slate leading-relaxed max-w-md italic">
                 Strategic guidance is only a conversation away. Our elite team is ready to provide clarity for your global academic goals.
               </p>
             </div>
@@ -47,7 +47,7 @@ export function Contact() {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="glass-card p-12 rounded-sm border-gold/20 relative"
+            className="glass-card p-6 md:p-12 rounded-sm border-gold/20 relative"
           >
             <div className="absolute top-0 left-0 w-32 h-1 bg-gold"></div>
             <form className="space-y-8">
@@ -84,7 +84,7 @@ export function Contact() {
         </div>
 
         {/* Map Placeholder */}
-        <div className="mt-32 h-[500px] rounded-sm overflow-hidden border border-white/10">
+        <div className="mt-16 md:mt-32 h-[300px] md:h-[500px] rounded-sm overflow-hidden border border-white/10">
            <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.5728956975!2d-79.51814144347717!3d43.71815525547055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323557dd83d5166a!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1715071800000!5m2!1sen!2sca" 
             width="100%" 
@@ -101,13 +101,13 @@ export function Contact() {
 
 function ContactInfoItem({ icon: Icon, title, content }: { icon: any; title: string; content: string }) {
   return (
-    <div className="flex gap-8 items-start group">
-      <div className="w-16 h-16 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-navy transition-all shadow-xl">
-        <Icon size={32} />
+    <div className="flex gap-4 md:gap-8 items-start group">
+      <div className="w-12 h-12 md:w-16 md:h-16 shrink-0 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-navy transition-all shadow-xl">
+        <Icon size={24} className="md:w-8 md:h-8" />
       </div>
-      <div>
+      <div className="min-w-0">
         <h3 className="text-[10px] font-black text-slate uppercase tracking-[3px] mb-2">{title}</h3>
-        <p className="text-3xl font-display text-white italic group-hover:text-gold transition-colors">{content}</p>
+        <p className="text-xl md:text-3xl font-display text-white italic group-hover:text-gold transition-colors break-words">{content}</p>
       </div>
     </div>
   );
