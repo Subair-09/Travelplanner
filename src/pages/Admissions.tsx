@@ -17,7 +17,7 @@ export function Admissions() {
             >
               <ClipboardCheck size={16} /> Admission Lifecycle
             </motion.div>
-            <h1 className="text-4xl md:text-7xl font-bold text-navy font-display">Your Fast Track <br /> To <span className="text-gold italic">Global Education</span></h1>
+            <h1 className="text-4xl md:text-7xl font-bold text-navy font-display">Your Fast Track <br /> To <span className="text-gold">Global Education</span></h1>
             <p className="text-lg md:text-xl text-gray-500 leading-relaxed italic">
               Navigating global admissions can be daunting. We’ve streamlined the process to make it transparent, predictable, and successful.
             </p>
@@ -47,7 +47,7 @@ export function Admissions() {
         {/* Process Steps */}
         <section className="mb-32">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy font-display mb-4 italic">Our 4-Step Success Process</h2>
+            <h2 className="text-4xl font-bold text-navy font-display mb-4">Our 4-Step Success Process</h2>
             <p className="text-gray-500 max-w-xl mx-auto">From shortlisting to departure, we are with you every step of the way.</p>
           </div>
           
@@ -104,7 +104,7 @@ export function Admissions() {
         <section id="consultation" className="max-w-4xl mx-auto bg-navy rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 lg:p-20 text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-white/5 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
           <div className="relative z-10 text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-display italic mb-4">Book Your Free Consultation</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">Book Your Free Consultation</h2>
             <p className="text-white/60 text-sm md:text-base">Our experts are ready to map out your study abroad journey.</p>
           </div>
           
@@ -146,7 +146,7 @@ function ProcessStep({ number, title, desc }: { number: string; title: string; d
     <div className="space-y-6">
        <div className="text-5xl md:text-6xl font-black text-navy/5 font-display mb-[-25px] md:mb-[-30px] ml-4">{number}</div>
        <div className="p-6 md:p-8 rounded-3xl bg-white border border-gray-100 shadow-sm relative z-10 hover:shadow-xl transition-all h-full">
-         <h3 className="text-xl md:text-2xl font-bold text-navy font-display italic mb-4">{title}</h3>
+         <h3 className="text-xl md:text-2xl font-bold text-navy font-display mb-4">{title}</h3>
          <p className="text-gray-500 leading-relaxed text-sm">{desc}</p>
        </div>
     </div>

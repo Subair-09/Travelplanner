@@ -16,8 +16,8 @@ export function Blog() {
           >
             <BookOpen size={16} /> Intellectual Hub
           </motion.div>
-          <h1 className="text-4xl md:text-8xl font-display font-semibold text-white italic leading-tight">
-            Travelplanner <span className="text-gold italic">Insights</span>
+          <h1 className="text-4xl md:text-8xl font-display font-semibold text-white leading-tight uppercase">
+            Travelplanner <span className="text-gold">Insights</span>
           </h1>
           <p className="text-lg md:text-xl text-slate max-w-2xl mx-auto italic font-light">
             "Strategic intelligence for the modern academic explorer. Student stories, and global news that shape your trajectory."
@@ -38,7 +38,7 @@ export function Blog() {
                 <span className="bg-gold text-navy px-4 py-1 rounded-sm">{BLOG_POSTS[0].category}</span>
                 <span className="flex items-center gap-2 border-b border-gold/20 pb-1"><Clock size={16} /> 5 MIN READ</span>
               </div>
-              <h2 className="text-2xl md:text-7xl font-display font-bold text-white mb-4 md:mb-8 max-w-4xl leading-tight md:leading-[1.1] italic">
+              <h2 className="text-2xl md:text-7xl font-display font-bold text-white mb-4 md:mb-8 max-w-4xl leading-tight md:leading-[1.1]">
                 {BLOG_POSTS[0].title}
               </h2>
               <p className="text-slate text-lg md:text-xl mb-6 md:mb-10 max-w-3xl line-clamp-2 italic leading-relaxed hidden sm:block">
@@ -98,7 +98,7 @@ export function Blog() {
                 <div className="flex items-center gap-3 text-[10px] text-slate font-black uppercase tracking-widest leading-none border-b border-white/5 pb-4">
                    <Calendar size={14} className="text-gold" /> {post.date}
                 </div>
-                <h3 className="text-xl md:text-2xl font-display font-semibold text-white italic leading-tight group-hover:text-gold transition-colors line-clamp-2">
+                <h3 className="text-xl md:text-2xl font-display font-semibold text-white leading-tight group-hover:text-gold transition-colors line-clamp-2">
                   {post.title}
                 </h3>
                 <p className="text-slate line-clamp-3 text-sm leading-relaxed italic font-light">

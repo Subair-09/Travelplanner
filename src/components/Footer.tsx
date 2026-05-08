@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <div className="logo text-2xl font-display font-bold">
+            <div className="logo text-2xl font-display font-bold uppercase">
               TRAVEL<span className="text-gold">PLANNER</span>
             </div>
             <p className="text-slate text-sm leading-relaxed max-w-xs">

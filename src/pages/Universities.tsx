@@ -43,7 +43,7 @@ export function Universities() {
         {/* Header */}
         <div className="mb-12 md:mb-20">
           <h1 className="text-4xl md:text-7xl font-display font-semibold text-white mb-6">
-            Discover Your <span className="text-gold italic">Future</span>
+            Discover Your <span className="text-gold">Future</span>
           </h1>
           <p className="text-lg md:text-xl text-slate max-w-2xl italic">
             Find world-class universities that match your aspirations. Use our refined filters to narrow down your study abroad dream.
@@ -123,7 +123,7 @@ export function Universities() {
                 <div className="flex items-center gap-4 md:gap-6 mb-8">
                   <img src={uni.logo} className="w-12 h-12 md:w-16 md:h-16 rounded-sm object-cover border border-white/10 shrink-0" alt={uni.name} />
                   <div className="min-w-0">
-                    <h3 className="text-xl md:text-2xl font-display text-white italic line-clamp-1">{uni.name}</h3>
+                    <h3 className="text-xl md:text-2xl font-display text-white line-clamp-1">{uni.name}</h3>
                     <p className="text-[10px] text-slate font-bold uppercase tracking-widest truncate">{uni.city}, {uni.country}</p>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
             </section>
 
             <section className="space-y-10">
-              <h2 className="text-4xl font-display text-white italic">Programs <span className="text-gold italic">Offered</span></h2>
+              <h2 className="text-4xl font-display text-white">Programs <span className="text-gold">Offered</span></h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {university.programs.map((program: string, i: number) => (
                   <div key={i} className="p-6 rounded-sm glass-card border-white/5 flex items-center gap-4 hover:border-gold/20 transition-all">
@@ -229,7 +229,7 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
             </section>
 
             <section className="space-y-10">
-              <h2 className="text-4xl font-display text-white italic">Admission Requirements</h2>
+              <h2 className="text-4xl font-display text-white">Admission Requirements</h2>
               <div className="space-y-4">
                 {university.requirements.map((req: string, i: number) => (
                   <div key={i} className="flex items-start gap-6 p-6 rounded-sm bg-white/5 border border-white/5">
@@ -244,7 +244,7 @@ function UniversityDetail({ university, onBack }: { university: any; onBack: () 
           {/* Sidebar */}
           <div className="space-y-12">
             <div className="glass-card p-6 md:p-12 rounded-sm border-gold/20 space-y-8 md:space-y-10">
-              <h3 className="text-2xl md:text-3xl font-display text-white italic">Institutional <span className="text-gold italic">Data</span></h3>
+              <h3 className="text-2xl md:text-3xl font-display text-white">Institutional <span className="text-gold">Data</span></h3>
               <div className="space-y-6">
                 <DataRow label="Global Academic Ranking" value={`#${university.ranking}`} />
                 <DataRow label="Estimated Annual Tuition" value={`${formatCurrency(university.tuitionRange.min)}+`} />
@@ -284,7 +284,7 @@ function DataRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex justify-between items-end border-b border-white/10 pb-4">
       <span className="text-[10px] uppercase tracking-widest font-bold text-slate max-w-[120px] leading-tight shrink-0">{label}</span>
-      <span className="font-display text-xl md:text-2xl italic text-gold leading-none">{value}</span>
+      <span className="font-display text-xl md:text-2xl text-gold leading-none">{value}</span>
     </div>
   );
 }

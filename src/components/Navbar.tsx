@@ -34,7 +34,7 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="text-2xl font-display font-bold tracking-tight text-white">
+          <span className="text-2xl font-display font-bold tracking-tight text-white uppercase">
             TRAVEL<span className="text-gold">PLANNER</span>
           </span>
         </Link>

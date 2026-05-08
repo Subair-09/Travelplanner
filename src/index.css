@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Playfair Display", serif;
+  --font-display: "Space Grotesk", sans-serif;
   
-  --color-navy: #0A192F;
-  --color-navy-light: #112240;
-  --color-navy-dark: #020c1b;
-  --color-gold: #C5A028;
-  --color-slate: #8892B0;
-  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-navy: #0F0117;
+  --color-navy-light: #1A0B2E;
+  --color-navy-dark: #050008;
+  --color-gold: #A100FF;
+  --color-slate: #9CA3AF;
+  --color-glass: rgba(161, 0, 255, 0.05);
 }
 
 @layer base {
@@ -33,7 +33,7 @@
   }
 
   .gold-gradient {
-    background: linear-gradient(135deg, #C5A028 0%, #E2C799 100%);
+    background: linear-gradient(135deg, #A100FF 0%, #D8B4FE 100%);
   }
 
   .btn-gold {

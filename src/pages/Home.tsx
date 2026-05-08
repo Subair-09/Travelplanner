@@ -28,7 +28,7 @@ export function Home() {
             className="lg:w-3/5 space-y-10"
           >
             <h1 className="text-4xl md:text-8xl font-display font-semibold leading-[1.1] text-white">
-              Plan Your Study <br className="hidden md:block" /> <span className="text-gold italic">Abroad Journey</span> <br className="hidden md:block" /> With Ease
+              Plan Your Study <br className="hidden md:block" /> <span className="text-gold">Abroad Journey</span> <br className="hidden md:block" /> With Ease
             </h1>
             <p className="text-xl text-slate max-w-lg leading-relaxed">
               Empowering ambitious students to access world-class education through personalized consultancy, scholarship matching, and seamless visa processing.
@@ -55,7 +55,7 @@ export function Home() {
               </div>
               <div className="space-y-4">
                 <p className="text-gold text-[10px] uppercase tracking-[3px] font-bold">Intelligent Matching</p>
-                <h3 className="text-2xl font-display text-white italic">AI Scholarship Finder</h3>
+                <h3 className="text-2xl font-display text-white">AI Scholarship Finder</h3>
                 <p className="text-slate text-sm leading-relaxed">
                   Our proprietary algorithm matches your academic profile with over $2.5B in global funding opportunities.
                 </p>
@@ -66,15 +66,15 @@ export function Home() {
               </div>
             </div>
 
-            <div className="glass-card p-10 bg-gold text-navy group border-transparent">
+            <div className="glass-card p-10 bg-gold text-white group border-transparent">
               <div className="space-y-4">
-                <p className="text-navy/60 text-[10px] uppercase tracking-[3px] font-bold">Ready to Start?</p>
-                <h3 className="text-2xl font-display italic">2024 Fall Intake Open</h3>
-                <p className="text-navy/80 text-sm font-medium leading-relaxed">
+                <p className="text-white/60 text-[10px] uppercase tracking-[3px] font-bold">Ready to Start?</p>
+                <h3 className="text-2xl font-display">2024 Fall Intake Open</h3>
+                <p className="text-white/80 text-sm font-medium leading-relaxed">
                   Final application deadline for premium partner universities is approaching. Secure your spot now.
                 </p>
                 <div className="pt-6">
-                  <span className="font-black text-sm uppercase tracking-widest border-b-2 border-navy cursor-pointer">Apply Now →</span>
+                  <span className="font-black text-sm uppercase tracking-widest border-b-2 border-white cursor-pointer">Apply Now →</span>
                 </div>
               </div>
             </div>
